@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="730dp"
+        android:layout_height="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/playPauseButton"
+            android:layout_width="180dp"
+            android:layout_height="49dp"
+            android:onClick="onPlayPauseButtonClick"
+            android:text="Play/Pause"
+            app:icon="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <Button
+            android:id="@+id/prevSongButton"
+            android:layout_width="53dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginEnd="20dp"
+            android:onClick="onSelectPreviousSongButton"
+            app:icon="@android:drawable/ic_media_previous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playPauseButton"
+            app:layout_constraintHorizontal_bias="0.838"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <Button
+            android:id="@+id/nextSongButton"
+            android:layout_width="53dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="172dp"
+            android:onClick="onSelectNextSongButton"
+            app:icon="@android:drawable/ic_media_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/playPauseButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <Button
+            android:id="@+id/selectRandomSongButton"
+            android:layout_width="227dp"
+            android:layout_height="43dp"
+            android:onClick="onSelectRandomSongButton"
+            android:text="@string/select_random_song"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.654"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/songTextView"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/song"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="713dp"
+            android:layout_height="34dp"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.193" />
+
+        <TextView
+            android:id="@+id/albumTextView"
+            android:layout_width="716dp"
+            android:layout_height="35dp"
+            android:text="@string/album"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="706dp"
+            android:layout_height="74dp"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.318" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
