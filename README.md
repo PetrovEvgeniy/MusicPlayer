@@ -1,4 +1,4 @@
-#🎵Music Player
+#Music Player 🎵
 Audio player, which asynchronously loads songs/music files from the external phone storage (SD card). The songs are selected randomly via a button. Play/Pause functionality is included.
 
 ## Additional info
